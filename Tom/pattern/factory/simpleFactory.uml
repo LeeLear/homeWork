@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.gupaoedu.vip.pattern.factory.factory.simpleFactory.CourseFactory</OriginalElement>
+  <nodes>
+    <node x="-56.0" y="-21.0">com.gupaoedu.vip.pattern.factory.factory.simpleFactory.CourseFactory</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="66.0" y="15.5" />
+  <SelectedNodes>
+    <node>com.gupaoedu.vip.pattern.factory.factory.simpleFactory.CourseFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

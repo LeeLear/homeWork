@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.gupaoedu.vip.pattern.factory.entity.ICourse</OriginalElement>
+  <nodes>
+    <node x="-74.25" y="152.0">com.gupaoedu.vip.pattern.factory.entity.INote</node>
+    <node x="-196.75" y="2.0">com.gupaoedu.vip.pattern.factory.entity.IVideo</node>
+    <node x="-158.0" y="233.0">com.gupaoedu.vip.pattern.factory.entity.PythonNote</node>
+    <node x="-283.0" y="83.0">com.gupaoedu.vip.pattern.factory.entity.PythonVideo</node>
+    <node x="0.0" y="81.0">com.gupaoedu.vip.pattern.factory.entity.PythonCourse</node>
+    <node x="-140.0" y="83.0">com.gupaoedu.vip.pattern.factory.entity.JavaVideo</node>
+    <node x="88.75" y="0.0">com.gupaoedu.vip.pattern.factory.entity.ICourse</node>
+    <node x="149.0" y="81.0">com.gupaoedu.vip.pattern.factory.entity.JavaCourse</node>
+    <node x="-20.0" y="233.0">com.gupaoedu.vip.pattern.factory.entity.JavaNote</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.gupaoedu.vip.pattern.factory.entity.JavaVideo" target="com.gupaoedu.vip.pattern.factory.entity.IVideo">
+      <point x="0.0" y="-15.5" />
+      <point x="-87.0" y="58.0" />
+      <point x="-133.0" y="58.0" />
+      <point x="21.25" y="15.5" />
+    </edge>
+    <edge source="com.gupaoedu.vip.pattern.factory.entity.JavaNote" target="com.gupaoedu.vip.pattern.factory.entity.INote">
+      <point x="0.0" y="-15.5" />
+      <point x="30.5" y="208.0" />
+      <point x="-14.25" y="208.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="com.gupaoedu.vip.pattern.factory.entity.PythonNote" target="com.gupaoedu.vip.pattern.factory.entity.INote">
+      <point x="0.0" y="-15.5" />
+      <point x="-99.0" y="208.0" />
+      <point x="-54.25" y="208.0" />
+      <point x="-20.0" y="15.5" />
+    </edge>
+    <edge source="com.gupaoedu.vip.pattern.factory.entity.PythonCourse" target="com.gupaoedu.vip.pattern.factory.entity.ICourse">
+      <point x="0.0" y="-15.5" />
+      <point x="64.5" y="56.0" />
+      <point x="111.75" y="56.0" />
+      <point x="-23.0" y="15.5" />
+    </edge>
+    <edge source="com.gupaoedu.vip.pattern.factory.entity.JavaCourse" target="com.gupaoedu.vip.pattern.factory.entity.ICourse">
+      <point x="0.0" y="-15.5" />
+      <point x="205.0" y="56.0" />
+      <point x="157.75" y="56.0" />
+      <point x="23.0" y="15.5" />
+    </edge>
+    <edge source="com.gupaoedu.vip.pattern.factory.entity.PythonVideo" target="com.gupaoedu.vip.pattern.factory.entity.IVideo">
+      <point x="0.0" y="-15.5" />
+      <point x="-221.5" y="58.0" />
+      <point x="-175.5" y="58.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="46.0" y="133.5" />
+  <SelectedNodes>
+    <node>com.gupaoedu.vip.pattern.factory.entity.INote</node>
+    <node>com.gupaoedu.vip.pattern.factory.entity.PythonNote</node>
+    <node>com.gupaoedu.vip.pattern.factory.entity.JavaNote</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

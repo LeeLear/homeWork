@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.gupaoedu.vip.pattern.factory.factory.abstractFactory.IFactory</OriginalElement>
+  <nodes>
+    <node x="109.5" y="0.0">com.gupaoedu.vip.pattern.factory.factory.abstractFactory.IFactory</node>
+    <node x="219.0" y="150.0">com.gupaoedu.vip.pattern.factory.factory.abstractFactory.PythonFactory</node>
+    <node x="0.0" y="150.0">com.gupaoedu.vip.pattern.factory.factory.abstractFactory.JavaFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.gupaoedu.vip.pattern.factory.factory.abstractFactory.JavaFactory" target="com.gupaoedu.vip.pattern.factory.factory.abstractFactory.IFactory">
+      <point x="0.0" y="-50.0" />
+      <point x="99.5" y="125.0" />
+      <point x="159.25" y="125.0" />
+      <point x="-49.75" y="50.0" />
+    </edge>
+    <edge source="com.gupaoedu.vip.pattern.factory.factory.abstractFactory.PythonFactory" target="com.gupaoedu.vip.pattern.factory.factory.abstractFactory.IFactory">
+      <point x="0.0" y="-50.0" />
+      <point x="318.5" y="125.0" />
+      <point x="258.75" y="125.0" />
+      <point x="49.75" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="95.0" y="91.5" />
+  <SelectedNodes>
+    <node>com.gupaoedu.vip.pattern.factory.factory.abstractFactory.IFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
