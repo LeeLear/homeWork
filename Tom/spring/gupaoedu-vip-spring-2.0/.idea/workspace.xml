@@ -1,0 +1,2081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c6a366a-2da9-4bf5-9f15-ddc12d344ab8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/aopalliance/aop/Advice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Interceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Invocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Joinpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/MethodInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/MethodInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/ProxyMethodInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/TargetClassAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/TargetSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/aspect/AbstractAspectJAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/Advised.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/AdvisedSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/AopProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/CglibAopProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/JdkDynamicAopProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ReflectiveMethodInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/AfterReturningAdviceInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodAndTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/ThrowsAdviceInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/target/SingletonTargetSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/BeanWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/FactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/ListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/annotation/Autowired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/config/BeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/config/ConfigurableListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/FactoryBeanRegistrySupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/context/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/context/ConfigurableApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractRefreshableApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractRefreshableConfigApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/lang/Nullable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/stereotype/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/stereotype/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/utils/ClassUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/bind/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/bind/annotation/RequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/HandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/HandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/ModelAndView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/ViewResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/handler/AbstractHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/mvc/HttpRequestHandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/view/AbstractView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/view/AbstractViewResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-aop.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/BeanMetadataElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/Mergeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/Aware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/BeanClassLoaderAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactoryAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactoryUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/BeanNameAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/DisposableBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/FactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/HierarchicalBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/InjectionPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/ListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/AnnotatedBeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/AnnotatedGenericBeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Autowired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Qualifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Value.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanDefinitionHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanExpressionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanExpressionResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConfigurableListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConstructorArgumentValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/DependencyDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/Scope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/config/SingletonBeanRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/AutowireCandidateResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/BeanDefinitionRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/FactoryBeanRegistrySupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/GenericBeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/factory/support/SimpleAutowireCandidateResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/beans/support/GPDefaultListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/ApplicationContextAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/ConfigurableApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/annotation/AnnotationConfigApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/annotation/AnnotationConfigRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/annotation/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/support/AbstractApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/context/support/GenericApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/AliasRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/Conventions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/GenericTypeResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/MethodParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/NestedExceptionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/NestedIOException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/ParameterNameDiscoverer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/ParameterizedTypeReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/ResolvableType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/ResolvableTypeProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/SerializableTypeWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/SimpleAliasRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/annotation/AliasFor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/annotation/AnnotatedElementUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/AbstractFileResolvingResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/AbstractResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/ClassPathResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/ContextResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/DefaultResourceLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/FileUrlResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/InputStreamResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/InputStreamSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/ProtocolResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/ResourceLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/UrlResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/WritableResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/io/support/ResourcePatternResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/type/AnnotatedTypeMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/type/AnnotationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/type/ClassMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/type/MethodMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/type/StandardAnnotationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/core/type/StandardClassMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/http/HttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/lang/Nullable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/servlet/ModelAndView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/servlet/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/stereotype/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/stereotype/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/stereotype/Indexed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/stereotype/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/stereotype/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/ui/GPModelMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/ClassUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/CollectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/ConcurrentReferenceHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/MultiValueMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/ObjectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/ReflectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/ResourceUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/StringValueResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/util/TypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/web/context/ConfigurableWebApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-v2.0/src/main/java/org/springframework/web/context/WebApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pattern/conclusion/conclusion" beforeDir="false" afterPath="$PROJECT_DIR$/../../pattern/conclusion/conclusion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-v1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-v1/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gupaoedu-vip-spring-2.0" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/aspect/LogAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/aspect/GPJoinPoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/intercept/GPMethodInvocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="25" />
+              <folding>
+                <element signature="e#2033#2034#0" expanded="true" />
+                <element signature="e#2070#2071#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ReflectiveMethodInvocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodAndTarget.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Joinpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Invocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/MethodInvocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/DispatcherServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="e#1826#1840#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>isInterface</find>
+      <find>System</find>
+      <find>beanCacheMap</find>
+      <find>System.out</find>
+      <find>onRefresh</find>
+      <find>set</find>
+      <find>instantionAopConfig</find>
+      <find>pointCut</find>
+      <find>do</find>
+      <find>GPBeanDefinitionReader</find>
+      <find>$</find>
+      <find>GPHandlerAdapter</find>
+      <find>doAutowrited</find>
+      <find>GPRequestParam</find>
+      <find>joinPoint</find>
+      <find>joinpoint</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>RequestParam</replace>
+      <replace>joinpoint</replace>
+      <replace>methodInvocation</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/HandlerMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/handler/AbstractHandlerMapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/HandlerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/BeanDefinitionReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/context/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/ViewResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/View.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/view/AbstractViewResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/webmvc/servlet/GPHandlerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/view/AbstractView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/JdkAopProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/TargetClassAware.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/TargetSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/target/SingletonTargetSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/Advised.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/utils/ClassUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/MethodInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Joinpoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Invocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/MethodInvocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Interceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/GPJdkDynamicAopProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/ProxyMethodInvocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/lang/Nullable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/JdkDynamicAopProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/AopConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/AbstractBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/context/ConfigurableApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractRefreshableApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ProxyConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/CglibAopProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/aspect/AbstractAspectJAdvice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/AfterReturningAdviceInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/aspect/GPAfterThrowingAdviceInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/ThrowsAdviceInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/service/impl/ModifyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/service/impl/QueryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/ModelAndView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/DispatcherServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/mvc/HttpRequestHandlerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/aspect/LogAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ReflectiveMethodInvocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/action/MyAction.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-aop.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/AdvisedSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodAndTarget.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gupaoedu-vip-spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gupaoedu-vip-spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gupaoedu-vip-spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jetty" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="407" />
+    <option name="width" value="1528" />
+    <option name="height" value="1034" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="intercept" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="webmvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="webmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aopalliance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aopalliance" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aopalliance" type="462c0819:PsiDirectoryNode" />
+              <item name="intercept" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="stereotype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="DispatcherServlet" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gupaoedu-vip-spring-2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="Exception" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="gupaoedu-vip-spring-2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="Throwable" type="1a9f42e2:ClassTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556519192901" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.gupaoedu.vip.spring.formework.webmvc.servlet" />
+      <recent name="com.gupaoedu.vip.spring.formework.context" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEAProj\JavaProject\gupaoproject\2019\Tom\spring\gupaoedu-vip-spring-2.0\src\main\resources" />
+      <recent name="E:\WORKSPACE\gupaoedu-vip-spring-2.0\src\main\resources\layouts" />
+      <recent name="E:\WORKSPACE\gupaoedu-vip-spring-2.0\src\main\java\com\gupaoedu\vip\spring\formework\webmvc" />
+      <recent name="E:\WORKSPACE\gupaoedu-vip-spring-2.0\src\main\java\com\gupaoedu\vip\spring\formework\annotation" />
+      <recent name="E:\WORKSPACE\gupaoedu-vip-spring-2.0\src\main\java\com\gupaoedu\vip\spring\demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.spring.framework.aop" />
+      <recent name="org.aopalliance.intercept" />
+      <recent name="org.spring.framework.web.servlet" />
+      <recent name="org.spring.framework.web.servlet.mvc" />
+      <recent name="org.spring.framework.web.bind.annotation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WORKSPACE\gupaoedu-vip-spring-2.0\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.spring-high [jetty:run]">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbstractApplicationContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.spring.framework.context.support.AbstractApplicationContext" />
+      <module name="gupaoedu-vip-spring-2.0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.spring.framework.context.support.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdvisedSupport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.spring.framework.aop.framework.AdvisedSupport" />
+      <module name="gupaoedu-vip-spring-2.0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.spring.framework.aop.framework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GPBeanWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gupaoedu.vip.spring.framework.beans.GPBeanWrapper" />
+      <module name="gupaoedu-vip-spring-2.0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gupaoedu.vip.spring.framework.beans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.spring.framework.aop.framework.ProxyConfig" />
+      <module name="gupaoedu-vip-spring-2.0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.spring.framework.aop.framework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring-high [jetty:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.GPBeanWrapper" />
+      <item itemvalue="Application.ProxyConfig" />
+      <item itemvalue="Application.AbstractApplicationContext" />
+      <item itemvalue="Application.AdvisedSupport" />
+      <item itemvalue="Maven.spring-high [jetty:run]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.spring-high [jetty:run]" />
+        <item itemvalue="Application.AdvisedSupport" />
+        <item itemvalue="Application.AbstractApplicationContext" />
+        <item itemvalue="Application.ProxyConfig" />
+        <item itemvalue="Application.GPBeanWrapper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_INTERFACES,SHOW_NON_PUBLIC" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c6a366a-2da9-4bf5-9f15-ddc12d344ab8" name="Default" comment="" />
+      <created>1524123833882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524123833882</updated>
+      <workItem from="1524123837269" duration="12285000" />
+      <workItem from="1524303945539" duration="12200000" />
+      <workItem from="1524384797939" duration="8858000" />
+      <workItem from="1524657972270" duration="10940000" />
+      <workItem from="1525261435732" duration="9515000" />
+      <workItem from="1525273723883" duration="88000" />
+      <workItem from="1525525936715" duration="2607000" />
+      <workItem from="1525677686299" duration="6098000" />
+      <workItem from="1526366948984" duration="483000" />
+      <workItem from="1526374387177" duration="5260000" />
+      <workItem from="1526451571916" duration="572000" />
+      <workItem from="1526555286496" duration="1448000" />
+      <workItem from="1526910479963" duration="871000" />
+      <workItem from="1527139609220" duration="133000" />
+      <workItem from="1527238194866" duration="1432000" />
+      <workItem from="1527245569249" duration="886000" />
+      <workItem from="1527481944786" duration="2821000" />
+      <workItem from="1527672156238" duration="283000" />
+      <workItem from="1528435276109" duration="643000" />
+      <workItem from="1528798259817" duration="611000" />
+      <workItem from="1528884041524" duration="1034000" />
+      <workItem from="1529589216968" duration="710000" />
+      <workItem from="1530021713229" duration="3334000" />
+      <workItem from="1530884064903" duration="1290000" />
+      <workItem from="1531404186096" duration="854000" />
+      <workItem from="1532094680291" duration="984000" />
+      <workItem from="1532353026212" duration="635000" />
+      <workItem from="1532613407090" duration="5563000" />
+      <workItem from="1532939535245" duration="29000" />
+      <workItem from="1533132147329" duration="633000" />
+      <workItem from="1536292993366" duration="220000" />
+      <workItem from="1536933798541" duration="647000" />
+      <workItem from="1537536950020" duration="706000" />
+      <workItem from="1539266402131" duration="711000" />
+      <workItem from="1539588508840" duration="1013000" />
+      <workItem from="1539679805088" duration="743000" />
+      <workItem from="1539957131285" duration="806000" />
+      <workItem from="1540562442867" duration="669000" />
+      <workItem from="1540822148781" duration="687000" />
+      <workItem from="1541253985588" duration="637000" />
+      <workItem from="1541324411265" duration="58000" />
+      <workItem from="1541684519753" duration="1361000" />
+      <workItem from="1541749380696" duration="3064000" />
+      <workItem from="1542189628447" duration="610000" />
+      <workItem from="1542349009443" duration="604000" />
+      <workItem from="1542533176494" duration="2686000" />
+      <workItem from="1542790640887" duration="317000" />
+      <workItem from="1542964301072" duration="613000" />
+      <workItem from="1543240165883" duration="1334000" />
+      <workItem from="1543816683719" duration="5416000" />
+      <workItem from="1544498056902" duration="54000" />
+      <workItem from="1545054613754" duration="1169000" />
+      <workItem from="1545226615967" duration="4842000" />
+      <workItem from="1545403382144" duration="319000" />
+      <workItem from="1545636629254" duration="228000" />
+      <workItem from="1545731554101" duration="1846000" />
+      <workItem from="1546955258531" duration="3661000" />
+      <workItem from="1547094819318" duration="90000" />
+      <workItem from="1547100005340" duration="34000" />
+      <workItem from="1547555714731" duration="615000" />
+      <workItem from="1547993739286" duration="1466000" />
+      <workItem from="1548309060678" duration="16000" />
+      <workItem from="1548312360781" duration="4359000" />
+      <workItem from="1548831959392" duration="1721000" />
+      <workItem from="1548904792310" duration="2555000" />
+      <workItem from="1550025437283" duration="31563000" />
+      <workItem from="1550563627919" duration="630000" />
+      <workItem from="1550578008333" duration="1986000" />
+      <workItem from="1550633126440" duration="2906000" />
+      <workItem from="1550922371457" duration="2507000" />
+      <workItem from="1551331420879" duration="205000" />
+      <workItem from="1554348201122" duration="30000" />
+      <workItem from="1554722556005" duration="5722000" />
+      <workItem from="1554817472744" duration="1260000" />
+      <workItem from="1554877003241" duration="3669000" />
+      <workItem from="1554895501887" duration="10757000" />
+      <workItem from="1554963484547" duration="619000" />
+      <workItem from="1555040779287" duration="1854000" />
+      <workItem from="1555141120560" duration="607000" />
+      <workItem from="1555155472096" duration="11885000" />
+      <workItem from="1555228672485" duration="11815000" />
+      <workItem from="1555326850760" duration="130000" />
+      <workItem from="1555328136646" duration="9676000" />
+      <workItem from="1555379671722" duration="3223000" />
+      <workItem from="1555470445350" duration="7988000" />
+      <workItem from="1555509392456" duration="1772000" />
+      <workItem from="1555648575591" duration="1716000" />
+      <workItem from="1555823938386" duration="7531000" />
+      <workItem from="1555843311314" duration="12854000" />
+      <workItem from="1555905772451" duration="17491000" />
+      <workItem from="1555981416764" duration="7021000" />
+      <workItem from="1556003945467" duration="1754000" />
+      <workItem from="1556019823961" duration="1406000" />
+      <workItem from="1556069792699" duration="12896000" />
+      <workItem from="1556119677692" duration="3159000" />
+      <workItem from="1556179964795" duration="4868000" />
+      <workItem from="1556410036997" duration="807000" />
+      <workItem from="1556498864892" duration="19168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="340452000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="326" y="0" width="1222" height="827" extended-state="0" />
+    <layout>
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.15620641" side_tool="true" weight="0.36286595" />
+      <window_info id="Nl-Palette" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.8437936" visible="true" weight="0.24054983" />
+      <window_info id="Structure" order="7" weight="0.32492355" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.32857144" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32719547" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.3266187" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32805756" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.38417265" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32719547" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Tail" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.099388376" />
+      <window_info anchor="right" id="Properties" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32890365" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.32903782" />
+      <window_info anchor="right" id="SciView" order="11" weight="0.3298969" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/beans/support/GPBeanDefinitionReader.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractApplicationContext.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/support/GPAdvisedSupport.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/aspect/LogAspect.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ReflectiveMethodInvocation.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodAndTarget.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="config.getProperty(SCAN_PACKAGE)" language="JAVA" />
+        <watch expression="&quot;/&quot; + scanPackage.replaceAll(&quot;\\.&quot;,&quot;/&quot;" language="JAVA" />
+        <watch expression="this.getClass().getClassLoader().getResource(&quot;/&quot; + scanPackage.replaceAll(&quot;\\.&quot;,&quot;/&quot;))" language="JAVA" />
+        <watch expression="pointCutClassPattern" />
+      </configuration>
+      <configuration name="MavenRunConfiguration">
+        <watch expression="m.find()" />
+        <watch expression="!clazz.isAnnotationPresent(GPController.class)" language="JAVA" />
+        <watch expression="aspectClass.getMethod(after[1])" language="JAVA" />
+        <watch expression="aspectClass.getMethod(before[1])" language="JAVA" />
+        <watch expression="handlerMapping" />
+        <watch expression="handlerMapping" />
+        <watch expression="handlerMapping" />
+        <watch expression="this" />
+        <watch expression="this.handlerMappings.get(1).controller" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>((Hashtable.Entry)properties.entrySet().toArray()[0]).getKey()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.util.Hashtable.Entry,java.util.Hashtable</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/aspect/GPAfterReturningAdviceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/aspect/GPAbstractAspectAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/aspect/GPAfterThrowingAdviceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/aspect/GPMethodBeforeAdviceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/ThrowsAdviceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractRefreshableApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#2210#2211#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/webmvc/servlet/GPDispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/context/support/AbstractApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#1936#1937#0" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/webmvc/servlet/GPModelAndView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/service/IQueryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/web/bind/annotation/RequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/webmvc/servlet/GPHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="87" column="31" lean-forward="true" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/service/impl/QueryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="485" column="36" selection-start-line="485" selection-start-column="11" selection-end-line="485" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="414" column="25" lean-forward="true" selection-start-line="414" selection-start-column="25" selection-end-line="414" selection-end-column="25" />
+          <folding>
+            <element signature="e#17326#17327#0" expanded="true" />
+            <element signature="e#17377#17378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/handler/AbstractHandlerMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/ModelAndView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/mvc/HttpRequestHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/DefaultListableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/service/IModifyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/beans/support/GPBeanDefinitionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/context/GPApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="175" column="20" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/TargetSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="1273" column="18" selection-start-line="1273" selection-start-column="18" selection-end-line="1273" selection-end-column="18" />
+          <folding>
+            <element signature="e#21591#21592#0" expanded="true" />
+            <element signature="e#21636#21637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="1085" column="19" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="2222" selection-start-line="2222" selection-end-line="2222" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/action/MyAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/GPJdkDynamicAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="33" column="101" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/support/GPAdvisedSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+          <folding>
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#4707#4708#0" expanded="true" />
+            <element signature="e#4743#4744#0" expanded="true" />
+            <element signature="e#4781#4782#0" expanded="true" />
+            <element signature="e#4871#4872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/service/impl/ModifyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/target/SingletonTargetSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ProxyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2678#2679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-aop.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="73" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/AdvisedSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2958#2973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1538">
+          <caret line="84" column="54" lean-forward="true" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/JdkDynamicAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/MethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/ProxyMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/intercept/GPMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/framework/aop/aspect/GPJoinPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/MethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/aopalliance/intercept/Joinpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/spring/demo/aspect/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodAndTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/spring/framework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#1826#1840#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 (test2) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>gupaoedu-vip-spring-2.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>JDK_1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
