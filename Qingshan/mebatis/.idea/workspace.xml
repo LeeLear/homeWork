@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="67571885-a3b2-40cc-8a04-887498f0f3a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/Boot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/MapperProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/SqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Flush.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Intercepts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/MapKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Select.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/bootstrap/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/cache/CacheKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/BaseExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/CachingExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/SimpleExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/parameter/ParameterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/DefaultResultSetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/ResultSetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/statement/BaseStatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/statement/StatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/generator/api/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/generator/internal/JDBCConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/generator/internal/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/interceptor/MyPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/mapping/MappedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/mapping/SqlCommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Interceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/InterceptorChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Invocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/reflection/TypeParameterResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/scripting/defaults/DefaultParameterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSessionFactoryBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/v1/sql.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/pattern/conclusion/conclusion" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/pattern/conclusion/conclusion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/gupaoedu-vip-spring-2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/gupaoedu-vip-spring-2.0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactoryAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactoryAware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactoryUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/BeanFactoryUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/DisposableBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/DisposableBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/FactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/FactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/HierarchicalBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/HierarchicalBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/InjectionPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/InjectionPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/ListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/ListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/ObjectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/AnnotatedGenericBeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/AnnotatedGenericBeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Autowired.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Autowired.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Qualifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Qualifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/annotation/Value.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/AutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanDefinitionHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanDefinitionHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanExpressionResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/BeanExpressionResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConfigurableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConfigurableListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConfigurableListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConstructorArgumentValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/ConstructorArgumentValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/DependencyDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/DependencyDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/config/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/AbstractBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/BeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/BeanDefinitionRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/BeanDefinitionRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/DefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/DefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/FactoryBeanRegistrySupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/factory/support/FactoryBeanRegistrySupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/support/GPDefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/beans/support/GPDefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/ApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/ConfigurableApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/ConfigurableApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/annotation/AnnotationConfigApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/annotation/AnnotationConfigApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/annotation/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/annotation/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/support/AbstractApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/support/GenericApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/context/support/GenericApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/Conventions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/Conventions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/GenericTypeResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/GenericTypeResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/MethodParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/MethodParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/NestedExceptionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/NestedExceptionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/NestedIOException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/NestedIOException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ParameterNameDiscoverer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ParameterNameDiscoverer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ParameterizedTypeReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ParameterizedTypeReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ResolvableType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ResolvableType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ResolvableTypeProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/ResolvableTypeProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/SerializableTypeWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/SerializableTypeWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/SimpleAliasRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/SimpleAliasRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/annotation/AliasFor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/annotation/AliasFor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/annotation/AnnotatedElementUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/annotation/AnnotatedElementUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/AbstractFileResolvingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/AbstractFileResolvingResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/AbstractResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/AbstractResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ClassPathResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ClassPathResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ContextResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ContextResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/DefaultResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/DefaultResourceLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/FileUrlResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/FileUrlResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/InputStreamResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/InputStreamResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/InputStreamSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/InputStreamSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ProtocolResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ProtocolResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/ResourceLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/UrlResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/UrlResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/WritableResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/WritableResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/support/ResourcePatternResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/io/support/ResourcePatternResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/type/AnnotatedTypeMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/type/AnnotatedTypeMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/type/StandardAnnotationMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/type/StandardAnnotationMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/type/StandardClassMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/core/type/StandardClassMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/http/HttpStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/http/HttpStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/lang/Nullable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/lang/Nullable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/servlet/ModelAndView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/servlet/ModelAndView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/servlet/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/servlet/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Indexed.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Indexed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/stereotype/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/ui/GPModelMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/ui/GPModelMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/Assert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/Assert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ClassUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ClassUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/CollectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/CollectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ConcurrentReferenceHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ConcurrentReferenceHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/MultiValueMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/MultiValueMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ReflectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ReflectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ResourceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/ResourceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/StringValueResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/StringValueResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/TypeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/util/TypeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/web/context/ConfigurableWebApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/web/context/ConfigurableWebApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/web/context/WebApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Tom/spring/spring-v2.0/src/main/java/org/springframework/web/context/WebApplicationContext.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/statement/BaseStatementHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/SimpleExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/DefaultResultSetHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/BaseExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/CachingExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/Configuration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Plugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sql.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="102" selection-start-line="3" selection-start-column="102" selection-end-line="3" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#2135#2136#0" expanded="true" />
+                <element signature="e#2181#2182#0" expanded="true" />
+                <element signature="e#2256#2257#0" expanded="true" />
+                <element signature="e#2307#2308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>classPaths</find>
+      <find>doPath</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/mapper/BlogMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/plugin/Plugin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/session/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/session/DefaultSqlSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/datasource.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/Executor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Intercepts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSessionFactoryBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/cache/CacheKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/InterceptorChain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Interceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Invocation.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/generator/api/ConnectionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/generator/internal/JDBCConnectionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/generator/internal/util/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/mapping/SqlCommandType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Flush.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/Executor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperRegistry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/interceptor/MyPlugin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/ResultSetHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/v1/sql.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/TestMybatis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/MapKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/reflection/TypeParameterResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/DefaultResultSetHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/bootstrap/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/BaseExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/statement/StatementHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/parameter/ParameterHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/scripting/defaults/DefaultParameterHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/SimpleExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/mapping/MappedStatement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Plugin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/statement/BaseStatementHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mapper/BlogMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/CachingExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/App.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/apache-maven-3.5.4" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="405" />
+    <option name="width" value="1530" />
+    <option name="height" value="1035" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="binding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="executor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="executor" type="462c0819:PsiDirectoryNode" />
+              <item name="resultSet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mebatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gupaoedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vip" type="462c0819:PsiDirectoryNode" />
+              <item name="mebatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557281770449" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEAProj\JavaProject\gupaoproject\2019\Qingshan\mebatis\src\main\java\com\gupaoedu\vip\mebatis\v1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gupaoedu.vip.mebatis.v2.interceptor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEAProj\JavaProject\gupaoproject\2019\Qingshan\mebatis\src\main\java\com\gupaoedu\vip\mebatis\v2\annotation" />
+      <recent name="D:\IDEAProj\JavaProject\gupaoproject\2019\Qingshan\mebatis\src\main\java\com\gupaoedu\vip" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gupaoedu.vip.mebatis.App" />
+      <module name="mebatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gupaoedu.vip.mebatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gupaoedu.vip.mebatis.v1.Boot" />
+      <module name="mebatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gupaoedu.vip.mebatis.v1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gupaoedu.vip.mebatis.v2.bootstrap.Main" />
+      <module name="mebatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gupaoedu.vip.mebatis.v2.bootstrap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Boot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67571885-a3b2-40cc-8a04-887498f0f3a2" name="Default Changelist" comment="" />
+      <created>1557104406861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557104406861</updated>
+      <workItem from="1557104413336" duration="1193000" />
+      <workItem from="1557109604232" duration="14712000" />
+      <workItem from="1557190007353" duration="17275000" />
+      <workItem from="1557211404913" duration="3199000" />
+      <workItem from="1557214839855" duration="4902000" />
+      <workItem from="1557224439273" duration="6993000" />
+      <workItem from="1557280189548" duration="1578000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="49852000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16823056" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.38243628" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30169973" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.26770538" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Tail" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v1/Executor.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/plugin/Plugin.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/DefaultResultSetHandler.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/bootstrap/Main.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSession.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Plugin.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/BaseExecutor.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/SimpleExecutor.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="clazz" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>clazz</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>clazz.getInterfaces()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Configuration.RESOURCE_BUNDLE</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Flush.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/executor/ResultSetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="76" column="36" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/executor/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/executor/StatementHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/executor/SimpleExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/executor/CachingExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="123" column="50" selection-start-line="123" selection-start-column="50" selection-end-line="123" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/plugin/InterceptorChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/interceptor/MyPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/plugin/Plugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/InterceptorChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar!/com/mysql/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+          <folding>
+            <element signature="e#7806#7807#0" expanded="true" />
+            <element signature="e#8170#8171#0" expanded="true" />
+            <element signature="e#8250#8251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar!/com/mysql/jdbc/StatementImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="1312" selection-start-line="1312" selection-end-line="1312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/mapper/BlogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mybatis/v2/TestMybatis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/annotation/MapKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/reflection/TypeParameterResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2374">
+          <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="43" column="65" lean-forward="true" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mapper/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/bootstrap/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/statement/StatementHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/parameter/ParameterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/generator/internal/util/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="95" column="26" lean-forward="true" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1843#1844#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="e#3829#3830#0" expanded="true" />
+            <element signature="e#3887#3888#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/scripting/defaults/DefaultParameterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/mapping/MappedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7262#7263#0" expanded="true" />
+            <element signature="e#7298#7299#0" expanded="true" />
+            <element signature="e#7370#7371#0" expanded="true" />
+            <element signature="e#7420#7421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/interceptor/MyPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/ResultSetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk1.8.0_171/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8037">
+          <caret line="483" column="18" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Interceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/v1/sql.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="64" lean-forward="true" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mapper/BlogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/binding/MapperMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="41" column="57" lean-forward="true" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/SqlSessionFactoryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/statement/BaseStatementHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="102" selection-start-line="3" selection-start-column="102" selection-end-line="3" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/resultSet/DefaultResultSetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/session/defaults/DefaultSqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2307#2308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/plugin/Plugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/BaseExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/SimpleExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/v2/executor/CachingExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gupaoedu/vip/mebatis/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
