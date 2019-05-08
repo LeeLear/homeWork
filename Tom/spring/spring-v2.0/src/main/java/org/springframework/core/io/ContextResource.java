@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.core.io;
+package org.springframework.core.io;
 
 /**
  * Extended interface for a resource that is loaded from an enclosing

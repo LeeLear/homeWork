@@ -2,6 +2,7 @@ package org.springframework.context;
 
 
 import org.springframework.beans.factory.ListableBeanFactory;
+import org.springframework.lang.Nullable;
 
 /**
  * @author ：LeeLear
@@ -12,4 +13,11 @@ import org.springframework.beans.factory.ListableBeanFactory;
  */
 public interface ApplicationContext extends ListableBeanFactory {
 
+    /**
+     * Return the parent context, or {@code null} if there is no parent
+     * and this is the root of the context hierarchy.
+     * @return the parent context, or {@code null} if there is no parent
+     */
+    @Nullable
+    ApplicationContext getParent();
 }

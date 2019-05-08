@@ -16,7 +16,6 @@
 
 package org.springframework.beans.factory.config;
 
-import org.springframework.beans.BeansException;
 import org.springframework.lang.Nullable;
 
 /**
@@ -39,9 +38,9 @@ public interface BeanExpressionResolver {
 	 * @param value the value to check
 	 * @param evalContext the evaluation context
 	 * @return the resolved value (potentially the given value as-is)
-	 * @throws BeansException if evaluation failed
+
 	 */
 	@Nullable
-	Object evaluate(@Nullable String value, BeanExpressionContext evalContext) throws BeansException;
+	Object evaluate(@Nullable String value, BeanExpressionContext evalContext) ;
 
 }

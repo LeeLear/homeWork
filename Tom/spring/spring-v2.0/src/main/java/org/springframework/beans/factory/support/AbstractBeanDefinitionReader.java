@@ -1,10 +1,10 @@
-package com.gupaoedu.vip.framework.beans.factory.support;
+package org.springframework.beans.factory.support;
 
-import com.gupaoedu.vip.framework.core.io.Resource;
-import com.gupaoedu.vip.framework.core.io.ResourceLoader;
-import com.gupaoedu.vip.framework.core.io.support.ResourcePatternResolver;
-import com.gupaoedu.vip.framework.lang.Nullable;
-import com.gupaoedu.vip.framework.util.Assert;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.core.io.support.ResourcePatternResolver;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
 
 import java.io.IOException;
 import java.util.Set;

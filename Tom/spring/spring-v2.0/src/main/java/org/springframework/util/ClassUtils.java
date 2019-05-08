@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.util;
+package org.springframework.util;
 
-import com.gupaoedu.vip.framework.lang.Nullable;
+import org.springframework.lang.Nullable;
 
 import java.beans.Introspector;
 import java.lang.reflect.*;
@@ -1083,4 +1083,46 @@ public abstract class ClassUtils {
 		return (className != null && className.contains(CGLIB_CLASS_SEPARATOR));
 	}
 
+	/**
+	 * Check if the right-hand side type may be assigned to the left-hand side
+	 * type, assuming setting by reflection. Considers primitive wrapper
+	 * classes as assignable to the corresponding primitive types.
+	 * @param lhsType the target type
+	 * @param rhsType the value type that should be assigned to the target type
+	 * @return if the target type is assignable from the value type
+	 * @see TypeUtils#isAssignable
+	 */
+	public static boolean isAssignable(Class<?> lhsType, Class<?> rhsType) {
+		Assert.notNull(lhsType, "Left-hand side type must not be null");
+		Assert.notNull(rhsType, "Right-hand side type must not be null");
+		if (lhsType.isAssignableFrom(rhsType)) {
+			return true;
+		}
+		if (lhsType.isPrimitive()) {
+			Class<?> resolvedPrimitive = primitiveWrapperTypeMap.get(rhsType);
+			if (lhsType == resolvedPrimitive) {
+				return true;
+			}
+		}
+		else {
+			Class<?> resolvedWrapper = primitiveTypeToWrapperMap.get(rhsType);
+			if (resolvedWrapper != null && lhsType.isAssignableFrom(resolvedWrapper)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * Determine if the given type is assignable from the given value,
+	 * assuming setting by reflection. Considers primitive wrapper classes
+	 * as assignable to the corresponding primitive types.
+	 * @param type the target type
+	 * @param value the value that should be assigned to the type
+	 * @return if the type is assignable from the value
+	 */
+	public static boolean isAssignableValue(Class<?> type, @Nullable Object value) {
+		Assert.notNull(type, "Type must not be null");
+		return (value != null ? isAssignable(type, value.getClass()) : !type.isPrimitive());
+	}
 }

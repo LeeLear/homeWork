@@ -16,27 +16,15 @@
 
 package org.springframework.core;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.AnnotatedElement;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Executable;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
-import kotlin.reflect.KFunction;
-import kotlin.reflect.KParameter;
-import kotlin.reflect.jvm.ReflectJvmMapping;
 
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
 
 /**
  * Helper class that encapsulates the specification of a method parameter, i.e. a {@link Method}
@@ -326,18 +314,7 @@ public class MethodParameter {
 		return nestedParam;
 	}
 
-	/**
-	 * Return whether this method indicates a parameter which is not required:
-	 * either in the form of Java 8's {@link java.util.Optional}, any variant
-	 * of a parameter-level {@code Nullable} annotation (such as from JSR-305
-	 * or the FindBugs set of annotations), or a language-level nullable type
-	 * declaration in Kotlin.
-	 * @since 4.3
-	 */
-	public boolean isOptional() {
-		return (getParameterType() == Optional.class || hasNullableAnnotation() ||
-				(KotlinDetector.isKotlinType(getContainingClass()) && KotlinDelegate.isOptional(this)));
-	}
+
 
 	/**
 	 * Check whether this method parameter is annotated with any variant of a
@@ -356,7 +333,7 @@ public class MethodParameter {
 	/**
 	 * Return a variant of this {@code MethodParameter} which points to
 	 * the same parameter but one nesting level deeper in case of a
-	 * {@link java.util.Optional} declaration.
+	 * {@link Optional} declaration.
 	 * @since 4.3
 	 * @see #isOptional()
 	 * @see #nested()
@@ -722,44 +699,6 @@ public class MethodParameter {
 	}
 
 
-	/**
-	 * Inner class to avoid a hard dependency on Kotlin at runtime.
-	 */
-	private static class KotlinDelegate {
 
-		/**
-		 * Check whether the specified {@link MethodParameter} represents a nullable Kotlin type
-		 * or an optional parameter (with a default value in the Kotlin declaration).
-		 */
-		public static boolean isOptional(MethodParameter param) {
-			Method method = param.getMethod();
-			Constructor<?> ctor = param.getConstructor();
-			int index = param.getParameterIndex();
-			if (method != null && index == -1) {
-				KFunction<?> function = ReflectJvmMapping.getKotlinFunction(method);
-				return (function != null && function.getReturnType().isMarkedNullable());
-			}
-			else {
-				KFunction<?> function = null;
-				if (method != null) {
-					function = ReflectJvmMapping.getKotlinFunction(method);
-				}
-				else if (ctor != null) {
-					function = ReflectJvmMapping.getKotlinFunction(ctor);
-				}
-				if (function != null) {
-					List<KParameter> parameters = function.getParameters();
-					KParameter parameter = parameters
-							.stream()
-							.filter(p -> KParameter.Kind.VALUE.equals(p.getKind()))
-							.collect(Collectors.toList())
-							.get(index);
-					return (parameter.getType().isMarkedNullable() || parameter.isOptional());
-				}
-			}
-			return false;
-		}
-		
-	}
 
 }

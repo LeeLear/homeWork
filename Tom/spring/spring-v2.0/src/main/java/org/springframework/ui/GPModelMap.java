@@ -1,4 +1,4 @@
-package com.gupaoedu.vip.framework.ui;
+package org.springframework.ui;
 
 
 
@@ -7,9 +7,9 @@ import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import com.gupaoedu.vip.framework.core.Conventions;
-import com.gupaoedu.vip.framework.lang.Nullable;
-import com.gupaoedu.vip.framework.util.Assert;
+import org.springframework.core.Conventions;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
 
 
 /**
@@ -33,7 +33,7 @@ public class GPModelMap extends LinkedHashMap<String, Object> {
 
     /**
      * Add the supplied attribute to this {@code Map} using a
-     * {@link com.gupaoedu.vip.framework.core.Conventions#getVariableName generated name}.
+     * {@link org.springframework.core.Conventions#getVariableName generated name}.
      * <p><emphasis>Note: Empty {@link Collection Collections} are not added to
      * the model when using this method because we cannot correctly determine
      * the true convention name. View code should check for {@code null} rather

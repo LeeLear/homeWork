@@ -16,19 +16,14 @@
 
 package org.springframework.beans.factory.config;
 
-import java.beans.PropertyEditor;
-import java.security.AccessControlContext;
 
-import org.springframework.beans.PropertyEditorRegistrar;
-import org.springframework.beans.PropertyEditorRegistry;
-import org.springframework.beans.TypeConverter;
-import org.springframework.beans.factory.BeanDefinitionStoreException;
+
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.HierarchicalBeanFactory;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
-import org.springframework.core.convert.ConversionService;
 import org.springframework.lang.Nullable;
-import org.springframework.util.StringValueResolver;
+
+import java.beans.PropertyEditor;
+import java.security.AccessControlContext;
 
 /**
  * Configuration interface to be implemented by most bean factories. Provides
@@ -72,7 +67,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	 * @param parentBeanFactory the parent BeanFactory
 	 * @throws IllegalStateException if this factory is already associated with
 	 * a parent BeanFactory
-	 * @see #getParentBeanFactory()
+
 	 */
 	void setParentBeanFactory(BeanFactory parentBeanFactory) throws IllegalStateException;
 
@@ -144,75 +139,25 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	@Nullable
 	BeanExpressionResolver getBeanExpressionResolver();
 
-	/**
-	 * Specify a Spring 3.0 ConversionService to use for converting
-	 * property values, as an alternative to JavaBeans PropertyEditors.
-	 * @since 3.0
-	 */
-	void setConversionService(@Nullable ConversionService conversionService);
 
-	/**
-	 * Return the associated ConversionService, if any.
-	 * @since 3.0
-	 */
-	@Nullable
-	ConversionService getConversionService();
 
-	/**
-	 * Add a PropertyEditorRegistrar to be applied to all bean creation processes.
-	 * <p>Such a registrar creates new PropertyEditor instances and registers them
-	 * on the given registry, fresh for each bean creation attempt. This avoids
-	 * the need for synchronization on custom editors; hence, it is generally
-	 * preferable to use this method instead of {@link #registerCustomEditor}.
-	 * @param registrar the PropertyEditorRegistrar to register
-	 */
-	void addPropertyEditorRegistrar(PropertyEditorRegistrar registrar);
 
 	/**
 	 * Register the given custom property editor for all properties of the
 	 * given type. To be invoked during factory configuration.
 	 * <p>Note that this method will register a shared custom editor instance;
 	 * access to that instance will be synchronized for thread-safety. It is
-	 * generally preferable to use {@link #addPropertyEditorRegistrar} instead
 	 * of this method, to avoid for the need for synchronization on custom editors.
 	 * @param requiredType type of the property
 	 * @param propertyEditorClass the {@link PropertyEditor} class to register
 	 */
 	void registerCustomEditor(Class<?> requiredType, Class<? extends PropertyEditor> propertyEditorClass);
 
-	/**
-	 * Initialize the given PropertyEditorRegistry with the custom editors
-	 * that have been registered with this BeanFactory.
-	 * @param registry the PropertyEditorRegistry to initialize
-	 */
-	void copyRegisteredEditorsTo(PropertyEditorRegistry registry);
 
-	/**
-	 * Set a custom type converter that this BeanFactory should use for converting
-	 * bean property values, constructor argument values, etc.
-	 * <p>This will override the default PropertyEditor mechanism and hence make
-	 * any custom editors or custom editor registrars irrelevant.
-	 * @see #addPropertyEditorRegistrar
-	 * @see #registerCustomEditor
-	 * @since 2.5
-	 */
-	void setTypeConverter(TypeConverter typeConverter);
 
-	/**
-	 * Obtain a type converter as used by this BeanFactory. This may be a fresh
-	 * instance for each call, since TypeConverters are usually <i>not</i> thread-safe.
-	 * <p>If the default PropertyEditor mechanism is active, the returned
-	 * TypeConverter will be aware of all custom editors that have been registered.
-	 * @since 2.5
-	 */
-	TypeConverter getTypeConverter();
 
-	/**
-	 * Add a String resolver for embedded values such as annotation attributes.
-	 * @param valueResolver the String resolver to apply to embedded values
-	 * @since 3.0
-	 */
-	void addEmbeddedValueResolver(StringValueResolver valueResolver);
+
+
 
 	/**
 	 * Determine whether an embedded value resolver has been registered with this
@@ -230,17 +175,7 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	@Nullable
 	String resolveEmbeddedValue(String value);
 
-	/**
-	 * Add a new BeanPostProcessor that will get applied to beans created
-	 * by this factory. To be invoked during factory configuration.
-	 * <p>Note: Post-processors submitted here will be applied in the order of
-	 * registration; any ordering semantics expressed through implementing the
-	 * {@link org.springframework.core.Ordered} interface will be ignored. Note
-	 * that autodetected post-processors (e.g. as beans in an ApplicationContext)
-	 * will always be applied after programmatically registered ones.
-	 * @param beanPostProcessor the post-processor to register
-	 */
-	void addBeanPostProcessor(BeanPostProcessor beanPostProcessor);
+
 
 	/**
 	 * Return the current number of registered BeanPostProcessors, if any.
@@ -299,19 +234,10 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	 * implementation should synchronize alias access.
 	 * @param beanName the canonical name of the target bean
 	 * @param alias the alias to be registered for the bean
-	 * @throws BeanDefinitionStoreException if the alias is already in use
 	 */
-	void registerAlias(String beanName, String alias) throws BeanDefinitionStoreException;
+	void registerAlias(String beanName, String alias) ;
 
-	/**
-	 * Resolve all alias target names and aliases registered in this
-	 * factory, applying the given StringValueResolver to them.
-	 * <p>The value resolver may for example resolve placeholders
-	 * in target bean names and even in alias names.
-	 * @param valueResolver the StringValueResolver to apply
-	 * @since 2.5
-	 */
-	void resolveAliases(StringValueResolver valueResolver);
+
 
 	/**
 	 * Return a merged BeanDefinition for the given bean name,
@@ -319,20 +245,18 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
 	 * Considers bean definitions in ancestor factories as well.
 	 * @param beanName the name of the bean to retrieve the merged definition for
 	 * @return a (potentially merged) BeanDefinition for the given bean
-	 * @throws NoSuchBeanDefinitionException if there is no bean definition with the given name
 	 * @since 2.5
 	 */
-	BeanDefinition getMergedBeanDefinition(String beanName) throws NoSuchBeanDefinitionException;
+	BeanDefinition getMergedBeanDefinition(String beanName) ;
 
 	/**
 	 * Determine whether the bean with the given name is a FactoryBean.
 	 * @param name the name of the bean to check
 	 * @return whether the bean is a FactoryBean
 	 * ({@code false} means the bean exists but is not a FactoryBean)
-	 * @throws NoSuchBeanDefinitionException if there is no bean with the given name
 	 * @since 2.5
 	 */
-	boolean isFactoryBean(String name) throws NoSuchBeanDefinitionException;
+	boolean isFactoryBean(String name) ;
 
 	/**
 	 * Explicitly control the current in-creation status of the specified bean.

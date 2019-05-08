@@ -16,36 +16,24 @@
 
 package org.springframework.core;
 
+import org.springframework.core.SerializableTypeWrapper.FieldTypeProvider;
+import org.springframework.core.SerializableTypeWrapper.MethodParameterTypeProvider;
+import org.springframework.core.SerializableTypeWrapper.TypeProvider;
+import org.springframework.lang.Nullable;
+import org.springframework.util.*;
+
 import java.io.Serializable;
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.GenericArrayType;
-import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-import java.lang.reflect.WildcardType;
+import java.lang.reflect.*;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.IdentityHashMap;
 import java.util.Map;
 
-import org.springframework.core.SerializableTypeWrapper.FieldTypeProvider;
-import org.springframework.core.SerializableTypeWrapper.MethodParameterTypeProvider;
-import org.springframework.core.SerializableTypeWrapper.TypeProvider;
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.ClassUtils;
-import org.springframework.util.ConcurrentReferenceHashMap;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
-
 /**
- * Encapsulates a Java {@link java.lang.reflect.Type}, providing access to
+ * Encapsulates a Java {@link Type}, providing access to
  * {@link #getSuperType() supertypes}, {@link #getInterfaces() interfaces}, and
  * {@link #getGeneric(int...) generic parameters} along with the ability to ultimately
- * {@link #resolve() resolve} to a {@link java.lang.Class}.
+ * {@link #resolve() resolve} to a {@link Class}.
  *
  * <p>{@code ResolvableTypes} may be obtained from {@link #forField(Field) fields},
  * {@link #forMethodParameter(Method, int) method parameters},
@@ -155,7 +143,7 @@ public class ResolvableType implements Serializable {
 	 * @since 4.2
 	 */
 	private ResolvableType(Type type, @Nullable TypeProvider typeProvider,
-			@Nullable VariableResolver variableResolver, @Nullable Integer hash) {
+                           @Nullable VariableResolver variableResolver, @Nullable Integer hash) {
 
 		this.type = type;
 		this.typeProvider = typeProvider;
@@ -170,7 +158,7 @@ public class ResolvableType implements Serializable {
 	 * with upfront resolution but lazily calculated hash.
 	 */
 	private ResolvableType(Type type, @Nullable TypeProvider typeProvider,
-			@Nullable VariableResolver variableResolver, @Nullable ResolvableType componentType) {
+                           @Nullable VariableResolver variableResolver, @Nullable ResolvableType componentType) {
 
 		this.type = type;
 		this.typeProvider = typeProvider;
@@ -737,7 +725,7 @@ public class ResolvableType implements Serializable {
 	}
 
 	/**
-	 * Resolve this type to a {@link java.lang.Class}, returning {@code null}
+	 * Resolve this type to a {@link Class}, returning {@code null}
 	 * if the type cannot be resolved. This method will consider bounds of
 	 * {@link TypeVariable}s and {@link WildcardType}s if direct resolution fails;
 	 * however, bounds of {@code Object.class} will be ignored.
@@ -752,7 +740,7 @@ public class ResolvableType implements Serializable {
 	}
 
 	/**
-	 * Resolve this type to a {@link java.lang.Class}, returning the specified
+	 * Resolve this type to a {@link Class}, returning the specified
 	 * {@code fallback} if the type cannot be resolved. This method will consider bounds
 	 * of {@link TypeVariable}s and {@link WildcardType}s if direct resolution fails;
 	 * however, bounds of {@code Object.class} will be ignored.
@@ -1170,7 +1158,7 @@ public class ResolvableType implements Serializable {
 	 * @see #forConstructorParameter(Constructor, int)
 	 */
 	public static ResolvableType forConstructorParameter(Constructor<?> constructor, int parameterIndex,
-			Class<?> implementationClass) {
+                                                         Class<?> implementationClass) {
 
 		Assert.notNull(constructor, "Constructor must not be null");
 		MethodParameter methodParameter = new MethodParameter(constructor, parameterIndex);
@@ -1256,7 +1244,7 @@ public class ResolvableType implements Serializable {
 	 * @see #forMethodParameter(MethodParameter)
 	 */
 	public static ResolvableType forMethodParameter(MethodParameter methodParameter,
-			@Nullable ResolvableType implementationType) {
+                                                    @Nullable ResolvableType implementationType) {
 
 		Assert.notNull(methodParameter, "MethodParameter must not be null");
 		implementationType = (implementationType != null ? implementationType :
@@ -1425,7 +1413,7 @@ public class ResolvableType implements Serializable {
 		 * @return the resolved variable, or {@code null} if not found
 		 */
 		@Nullable
-		ResolvableType resolveVariable(TypeVariable<?> variable);
+        ResolvableType resolveVariable(TypeVariable<?> variable);
 	}
 
 

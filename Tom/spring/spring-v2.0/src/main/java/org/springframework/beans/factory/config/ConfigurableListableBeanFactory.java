@@ -1,6 +1,6 @@
-package com.gupaoedu.vip.framework.beans.factory.config;
+package org.springframework.beans.factory.config;
 
-import com.gupaoedu.vip.framework.beans.factory.ListableBeanFactory;
+import org.springframework.beans.factory.ListableBeanFactory;
 
 /**
  * @author ：LeeLear

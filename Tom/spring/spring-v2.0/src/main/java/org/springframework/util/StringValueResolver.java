@@ -24,9 +24,7 @@ import org.springframework.lang.Nullable;
  *
  * @author Juergen Hoeller
  * @since 2.5
- * @see org.springframework.beans.factory.config.ConfigurableBeanFactory#resolveAliases
- * @see org.springframework.beans.factory.config.BeanDefinitionVisitor#BeanDefinitionVisitor(StringValueResolver)
- * @see org.springframework.beans.factory.config.PropertyPlaceholderConfigurer
+
  */
 @FunctionalInterface
 public interface StringValueResolver {

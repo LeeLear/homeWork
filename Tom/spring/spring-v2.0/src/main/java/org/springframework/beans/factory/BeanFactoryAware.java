@@ -16,7 +16,6 @@
 
 package org.springframework.beans.factory;
 
-import org.springframework.beans.BeansException;
 
 /**
  * Interface to be implemented by beans that wish to be aware of their
@@ -50,6 +49,6 @@ public interface BeanFactoryAware extends Aware {
 	 * @throws BeansException in case of initialization errors
 	 * @see BeanInitializationException
 	 */
-	void setBeanFactory(BeanFactory beanFactory) throws BeansException;
+	void setBeanFactory(BeanFactory beanFactory);
 
 }

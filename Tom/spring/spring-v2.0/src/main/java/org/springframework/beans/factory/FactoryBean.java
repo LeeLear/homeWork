@@ -1,4 +1,4 @@
-package com.gupaoedu.vip.framework.beans.factory;
+package org.springframework.beans.factory;
 
 /**
  * @author ：LeeLear

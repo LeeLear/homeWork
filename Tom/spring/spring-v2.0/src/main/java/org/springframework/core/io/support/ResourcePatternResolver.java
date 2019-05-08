@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.core.io.support;
+package org.springframework.core.io.support;
 
-import com.gupaoedu.vip.framework.core.io.Resource;
-import com.gupaoedu.vip.framework.core.io.ResourceLoader;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 
 import java.io.IOException;
 

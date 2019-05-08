@@ -1,5 +1,5 @@
-package com.gupaoedu.vip.framework.beans.support;
-import com.gupaoedu.vip.framework.beans.factory.config.GPBeanDefinition;
+package org.springframework.beans.support;
+import org.springframework.beans.factory.config.GPBeanDefinition;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.core.io;
+package org.springframework.core.io;
 
 import java.io.IOException;
 import java.io.OutputStream;

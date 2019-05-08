@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.core.io;
+package org.springframework.core.io;
 
-import com.gupaoedu.vip.framework.lang.Nullable;
-import com.gupaoedu.vip.framework.util.Assert;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
 
 import java.io.IOException;
 import java.io.InputStream;

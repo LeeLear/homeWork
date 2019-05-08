@@ -1,4 +1,4 @@
-package com.gupaoedu.vip.framework.http;
+package org.springframework.http;
 
 /**
  * @author ：LeeLear

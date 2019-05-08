@@ -14,13 +14,15 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.util;
+package org.springframework.util;
+
+import org.springframework.lang.Nullable;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.function.Supplier;
 
-import com.gupaoedu.vip.framework.lang.Nullable;
+
 
 /**
  * Assertion utility class that assists in validating arguments.

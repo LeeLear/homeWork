@@ -1,8 +1,8 @@
-package com.gupaoedu.vip.framework.beans.factory.support;
+package org.springframework.beans.factory.support;
 
-import com.gupaoedu.vip.framework.beans.factory.config.BeanDefinition;
-import com.gupaoedu.vip.framework.beans.factory.config.GPBeanDefinition;
+import org.springframework.beans.factory.config.BeanDefinition;
 import com.sun.istack.internal.Nullable;
+import org.springframework.beans.factory.config.ConstructorArgumentValues;
 
 /**
  * @author ：LeeLear
@@ -17,6 +17,21 @@ public class AbstractBeanDefinition implements BeanDefinition {
     private volatile Object beanClass;
     private boolean lazyInit = false;
     private String factoryBeanName;
+
+    /**
+     * Create a new AbstractBeanDefinition with default settings.
+     */
+    protected AbstractBeanDefinition() {
+        this(null, null);
+    }
+    /**
+     * Create a new AbstractBeanDefinition with the given
+     * constructor argument values and property values.
+     */
+    protected AbstractBeanDefinition(@Nullable ConstructorArgumentValues cargs, @Nullable MutablePropertyValues pvs) {
+        this.constructorArgumentValues = cargs;
+        this.propertyValues = pvs;
+    }
 
     /**
      * Return whether this bean should be lazily initialized, i.e. not
@@ -35,6 +50,11 @@ public class AbstractBeanDefinition implements BeanDefinition {
     @Override
     public void setLazyInit(boolean lazyInit) {
         this.lazyInit = lazyInit;
+    }
+
+    @Override
+    public boolean isAutowireCandidate() {
+        return false;
     }
 
     @Override
@@ -97,4 +117,17 @@ public class AbstractBeanDefinition implements BeanDefinition {
     public void setParentName(String parentName) {
 
     }
+
+    @Override
+    public Object getSource() {
+        return null;
+    }
+
+    /**
+     * Specify the class for this bean.
+     */
+    public void setBeanClass(@Nullable Class<?> beanClass) {
+        this.beanClass = beanClass;
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.gupaoedu.vip.framework.stereotype;
+package org.springframework.stereotype;
 
 import java.lang.annotation.*;
 

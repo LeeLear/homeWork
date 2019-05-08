@@ -1,6 +1,7 @@
-package com.gupaoedu.vip.framework.beans.factory.config;
+package org.springframework.beans.factory.config;
 
 import com.sun.istack.internal.Nullable;
+import org.springframework.beans.BeanMetadataElement;
 
 /**
  * @author ：LeeLear
@@ -9,7 +10,7 @@ import com.sun.istack.internal.Nullable;
  * @modified By：
  * @version: $
  */
-public interface BeanDefinition {
+public interface BeanDefinition extends BeanMetadataElement {
 
     /**
      * Return whether this bean should be lazily initialized, i.e. not
@@ -88,4 +89,9 @@ public interface BeanDefinition {
      * factories that perform eager initialization of singletons.
      */
     void setLazyInit(boolean lazyInit);
+
+    /**
+     * Return whether this bean is a candidate for getting autowired into some other bean.
+     */
+    boolean isAutowireCandidate();
 }

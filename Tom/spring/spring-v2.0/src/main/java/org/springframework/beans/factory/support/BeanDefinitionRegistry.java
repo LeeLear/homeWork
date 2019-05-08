@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.beans.factory.support;
+package org.springframework.beans.factory.support;
 
-import com.gupaoedu.vip.framework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.config.BeanDefinition;
 
 
 

@@ -16,10 +16,10 @@
 
 package org.springframework.web.context;
 
-import javax.servlet.ServletContext;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.lang.Nullable;
+
+import javax.servlet.ServletContext;
 
 /**
  * Interface to provide configuration for a web application. This is read-only while
@@ -34,13 +34,11 @@ import org.springframework.lang.Nullable;
  * (including a dispatcher servlet in the MVC framework) has its own child context.
  *
  * <p>In addition to standard application context lifecycle capabilities,
- * WebApplicationContext implementations need to detect {@link ServletContextAware}
  * beans and invoke the {@code setServletContext} method accordingly.
  *
  * @author Rod Johnson
  * @author Juergen Hoeller
  * @since January 19, 2001
- * @see ServletContextAware#setServletContext
  */
 public interface WebApplicationContext extends ApplicationContext {
 
@@ -49,8 +47,7 @@ public interface WebApplicationContext extends ApplicationContext {
 	 * <p>Note: If the startup of the root context fails, this attribute can contain
 	 * an exception or error as value. Use WebApplicationContextUtils for convenient
 	 * lookup of the root WebApplicationContext.
-	 * @see org.springframework.web.context.support.WebApplicationContextUtils#getWebApplicationContext
-	 * @see org.springframework.web.context.support.WebApplicationContextUtils#getRequiredWebApplicationContext
+
 	 */
 	String ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE = WebApplicationContext.class.getName() + ".ROOT";
 
@@ -101,6 +98,6 @@ public interface WebApplicationContext extends ApplicationContext {
 	 * Return the standard Servlet API ServletContext for this application.
 	 */
 	@Nullable
-	ServletContext getServletContext();
+    ServletContext getServletContext();
 
 }

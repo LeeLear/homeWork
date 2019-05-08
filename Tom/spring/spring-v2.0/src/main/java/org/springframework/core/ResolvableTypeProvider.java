@@ -38,6 +38,6 @@ public interface ResolvableTypeProvider {
 	 * (or {@code null} if some sort of default should be applied instead).
 	 */
 	@Nullable
-	ResolvableType getResolvableType();
+    ResolvableType getResolvableType();
 
 }

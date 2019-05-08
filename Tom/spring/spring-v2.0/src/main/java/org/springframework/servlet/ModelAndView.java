@@ -1,7 +1,7 @@
-package com.gupaoedu.vip.framework.web.servlet;
+package org.springframework.servlet;
 
-import com.gupaoedu.vip.framework.http.HttpStatus;
-import com.gupaoedu.vip.framework.ui.GPModelMap;
+import org.springframework.http.HttpStatus;
+import org.springframework.ui.GPModelMap;
 import com.sun.istack.internal.Nullable;
 
 import java.util.Map;

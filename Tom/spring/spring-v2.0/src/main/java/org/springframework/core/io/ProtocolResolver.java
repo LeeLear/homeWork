@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.core.io;
+package org.springframework.core.io;
 
 
-import com.gupaoedu.vip.framework.lang.Nullable;
+import org.springframework.lang.Nullable;
 
 /**
  * A resolution strategy for protocol-specific resource handles.

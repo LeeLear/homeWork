@@ -16,12 +16,12 @@
 
 package org.springframework.core.type;
 
-import java.lang.reflect.Modifier;
-import java.util.LinkedHashSet;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.lang.reflect.Modifier;
+import java.util.LinkedHashSet;
 
 /**
  * {@link ClassMetadata} implementation that uses standard reflection

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.core.io;
+package org.springframework.core.io;
 
 
-import com.gupaoedu.vip.framework.core.NestedIOException;
-import com.gupaoedu.vip.framework.lang.Nullable;
-import com.gupaoedu.vip.framework.util.ResourceUtils;
+import org.springframework.core.NestedIOException;
+import org.springframework.lang.Nullable;
+import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;

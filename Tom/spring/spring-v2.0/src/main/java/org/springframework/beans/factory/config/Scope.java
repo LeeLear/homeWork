@@ -52,10 +52,6 @@ import org.springframework.lang.Nullable;
  * @author Rob Harrop
  * @since 2.0
  * @see ConfigurableBeanFactory#registerScope
- * @see CustomScopeConfigurer
- * @see org.springframework.aop.scope.ScopedProxyFactoryBean
- * @see org.springframework.web.context.request.RequestScope
- * @see org.springframework.web.context.request.SessionScope
  */
 public interface Scope {
 
@@ -117,9 +113,6 @@ public interface Scope {
 	 * Furthermore, the Runnable will usually be serializable, provided
 	 * that its target object is serializable as well.
 	 * @throws IllegalStateException if the underlying scope is not currently active
-	 * @see org.springframework.beans.factory.DisposableBean
-	 * @see org.springframework.beans.factory.support.AbstractBeanDefinition#getDestroyMethodName()
-	 * @see DestructionAwareBeanPostProcessor
 	 */
 	void registerDestructionCallback(String name, Runnable callback);
 

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.core.io;
+package org.springframework.core.io;
 
-import com.gupaoedu.vip.framework.lang.Nullable;
-import com.gupaoedu.vip.framework.util.ResourceUtils;
+import org.springframework.lang.Nullable;
+import org.springframework.util.ResourceUtils;
 
 /**
  * Strategy interface for loading resources (e.. class path or file system

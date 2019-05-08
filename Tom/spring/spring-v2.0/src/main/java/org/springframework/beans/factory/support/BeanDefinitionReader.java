@@ -1,8 +1,8 @@
-package com.gupaoedu.vip.framework.beans.factory.support;
+package org.springframework.beans.factory.support;
 
-import com.gupaoedu.vip.framework.core.io.Resource;
-import com.gupaoedu.vip.framework.core.io.ResourceLoader;
-import com.gupaoedu.vip.framework.lang.Nullable;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.lang.Nullable;
 
 /**
  * @author ：LeeLear

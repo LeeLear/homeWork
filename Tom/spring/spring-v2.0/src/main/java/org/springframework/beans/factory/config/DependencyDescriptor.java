@@ -16,6 +16,12 @@
 
 package org.springframework.beans.factory.config;
 
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.InjectionPoint;
+import org.springframework.core.*;
+import org.springframework.lang.Nullable;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
@@ -25,20 +31,6 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.Map;
 import java.util.Optional;
-
-import kotlin.reflect.KProperty;
-import kotlin.reflect.jvm.ReflectJvmMapping;
-
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.InjectionPoint;
-import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
-import org.springframework.core.GenericTypeResolver;
-import org.springframework.core.KotlinDetector;
-import org.springframework.core.MethodParameter;
-import org.springframework.core.ParameterNameDiscoverer;
-import org.springframework.core.ResolvableType;
-import org.springframework.lang.Nullable;
 
 /**
  * Descriptor for a specific dependency that is about to be injected.
@@ -153,27 +145,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 	}
 
 
-	/**
-	 * Return whether this dependency is required.
-	 * <p>Optional semantics are derived from Java 8's {@link java.util.Optional},
-	 * any variant of a parameter-level {@code Nullable} annotation (such as from
-	 * JSR-305 or the FindBugs set of annotations), or a language-level nullable
-	 * type declaration in Kotlin.
-	 */
-	public boolean isRequired() {
-		if (!this.required) {
-			return false;
-		}
 
-		if (this.field != null) {
-			return !(this.field.getType() == Optional.class || hasNullableAnnotation() ||
-					(KotlinDetector.isKotlinType(this.field.getDeclaringClass()) &&
-							KotlinDelegate.isNullable(this.field)));
-		}
-		else {
-			return !obtainMethodParameter().isOptional();
-		}
-	}
 
 	/**
 	 * Check whether the underlying field is annotated with any variant of a
@@ -197,23 +169,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 		return this.eager;
 	}
 
-	/**
-	 * Resolve the specified not-unique scenario: by default,
-	 * throwing a {@link NoUniqueBeanDefinitionException}.
-	 * <p>Subclasses may override this to select one of the instances or
-	 * to opt out with no result at all through returning {@code null}.
-	 * @param type the requested bean type
-	 * @param matchingBeans a map of bean names and corresponding bean
-	 * instances which have been pre-selected for the given type
-	 * (qualifiers etc already applied)
-	 * @return a bean instance to proceed with, or {@code null} for none
-	 * @throws BeansException in case of the not-unique scenario being fatal
-	 * @since 4.3
-	 */
-	@Nullable
-	public Object resolveNotUnique(Class<?> type, Map<String, Object> matchingBeans) throws BeansException {
-		throw new NoUniqueBeanDefinitionException(type, matchingBeans.keySet());
-	}
+
 
 	/**
 	 * Resolve a shortcut for this dependency against the given factory, for example
@@ -228,7 +184,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 	 * @since 4.3.1
 	 */
 	@Nullable
-	public Object resolveShortcut(BeanFactory beanFactory) throws BeansException {
+	public Object resolveShortcut(BeanFactory beanFactory) {
 		return null;
 	}
 
@@ -246,7 +202,7 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 	 * @see BeanFactory#getBean(String)
 	 */
 	public Object resolveCandidate(String beanName, Class<?> requiredType, BeanFactory beanFactory)
-			throws BeansException {
+			{
 
 		return beanFactory.getBean(beanName);
 	}
@@ -422,18 +378,6 @@ public class DependencyDescriptor extends InjectionPoint implements Serializable
 	}
 
 
-	/**
-	 * Inner class to avoid a hard dependency on Kotlin at runtime.
-	 */
-	private static class KotlinDelegate {
 
-		/**
-		 * Check whether the specified {@link Field} represents a nullable Kotlin type or not.
-		 */
-		public static boolean isNullable(Field field) {
-			KProperty<?> property = ReflectJvmMapping.getKotlinProperty(field);
-			return (property != null && property.getReturnType().isMarkedNullable());
-		}
-	}
 
 }

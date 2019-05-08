@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.util;
+package org.springframework.util;
 
-import com.gupaoedu.vip.framework.lang.Nullable;
+import org.springframework.lang.Nullable;
 
-import java.io.Serializable;
 import java.util.*;
 
 /**

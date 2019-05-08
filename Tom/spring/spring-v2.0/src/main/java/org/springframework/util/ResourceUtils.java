@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.gupaoedu.vip.framework.util;
+package org.springframework.util;
 
-import com.gupaoedu.vip.framework.lang.Nullable;
+import org.springframework.lang.Nullable;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -28,8 +28,8 @@ import java.net.*;
  *
  * <p>Consider using Spring's Resource abstraction in the core package
  * for handling all kinds of file resources in a uniform manner.
- * {@link com.gupaoedu.vip.framework.core.io.ResourceLoader}'s {@code getResource()}
- * method can resolve any location to a {@link com.gupaoedu.vip.framework.core.io.Resource}
+ * {@link org.springframework.core.io.ResourceLoader}'s {@code getResource()}
+ * method can resolve any location to a {@link org.springframework.core.io.Resource}
  * object, which in turn allows one to obtain a {@code java.io.File} in the
  * file system through its {@code getFile()} method.
  *
